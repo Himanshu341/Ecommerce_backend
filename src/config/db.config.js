@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const dbConfig = {
-  url: 'mongodb://localhost:27017/mydb'
+  url: process.env.MONGO_DB_URL
 };
 
 // Connect to MongoDB using the URL
